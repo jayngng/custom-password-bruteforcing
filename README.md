@@ -12,12 +12,7 @@ See that there are two opened ports:
 - http:80
 - ssh:22
 
-Maybe we have something to do with the http port, so I run gobuster against the website to find hidden directories if exist. Let's have a look at this.
-
-
-
-
-There are some other hidden directories but we are interested in the first one !!! (But I think you shouldn't ignore the rest, we are better to check all of them).
+Maybe we have something to do with the http port, so I run gobuster against the website to find hidden directories if exist. Found that there are some other hidden directories but we are interested in the first one !!! (But I think you shouldn't ignore the rest, we are better to check all of them).
 
 ![homepage](https://user-images.githubusercontent.com/72692401/95679871-571e7500-0c21-11eb-98e5-cf590d279e00.png)
 
@@ -39,7 +34,15 @@ Next, there are 2 numbers and a special character at the end of the password. Un
 
 ![login](https://user-images.githubusercontent.com/72692401/95680440-7f0fd780-0c25-11eb-9eaf-1225623b50f7.png)
 
+Successfully login, I immediately click onto "COMMANDS" page without any thinking and checking other pages !!!. 
 
+I try different commands and also try escaping command filtering but it keeps returning "Invalid Command!".
+
+However, you remember that we have another port is opening which is 22:ssh, I successfully login with the credentials that we found previously and read "flag1.txt"
+
+![login](https://user-images.githubusercontent.com/72692401/95681024-525dbf00-0c29-11eb-8ccf-6f4390291964.png)
+
+Listing home directory, there is another user is curtis, maybe I have to find a way to get to this user. Therefore, I tried to enumerate more about the current user and found that he belongs to "web-developers" group. The ability of this group is reading and writing files in "/var/www/html/admin/*".  
 
 
 
