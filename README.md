@@ -27,15 +27,24 @@ Recall gobuster, there are some hidden directories, but we are interested in the
 
 ![gobuster](https://user-images.githubusercontent.com/72692401/95679743-9c8e7280-0c20-11eb-9813-eab78537d097.png)
 
-Let's visit that directory.
-
-![page](https://user-images.githubusercontent.com/72692401/95679980-fcd1e400-0c21-11eb-9c53-db3a2b46f9aa.png)
-
-Hmm, it looks like we need to find credentials to login. I try to login with marco:marco but I failed.
+Let's visit that directory. Hmm, it looks like we need to find credentials to login. But before that, I try to login with marco:marco and I failed. However, we can see that website returns us a password hint.
 
 ![login](https://user-images.githubusercontent.com/72692401/95680061-82559400-0c22-11eb-8951-143d59d87204.png)
 
-Luckily 
+Do you remember marco blog page? He tells us a lot about his hobby which is all about planes and his favorite planes. Therefore, we can list them into the "a memorable word" referred to the password hint.
+
+- A possible memorable word: marco, plane, planes, savoia, macchi, flying.
+
+Next, there are 2 numbers and a special character at the end of the password. Until now, I think that I should try creating a simple python script to bruteforce login credentials. (I had included the script in github page site as well, for saving your time, I had removed some invalid combinations) (I'm really sorry because the script is not well organized).
+
+![login](https://user-images.githubusercontent.com/72692401/95680440-7f0fd780-0c25-11eb-9eaf-1225623b50f7.png)
+
+
+
+
+
+
+
 
 
 
