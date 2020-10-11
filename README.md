@@ -13,7 +13,8 @@ See that there are two opened ports:
 - ssh:22
 
 Maybe we have something to do with http port, so I run gobuster against the website to find hidden directories if exist
-![Screenshot 2020-10-12 001215](https://user-images.githubusercontent.com/72692401/95679724-7a94f000-0c20-11eb-96fe-c0cdca46e765.png)
+
+![gobuster](https://user-images.githubusercontent.com/72692401/95679743-9c8e7280-0c20-11eb-9813-eab78537d097.png)
 
 
 
