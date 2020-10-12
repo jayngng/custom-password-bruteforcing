@@ -12,6 +12,7 @@ from colorama import init, Fore
 init()
 GREEN = Fore.LIGHTCYAN_EX
 
+# Creating list 
 special_characters = ["!","@","#","$","%","^","&","*","`"]
 numbers_lst = ["19", "20", "21","22"]
 password_hint = ["marco", "admin", "plane", "savoia"]
