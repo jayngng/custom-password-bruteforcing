@@ -1,1 +1,2 @@
-I have wrote this python code when I played CTFs
+Custom code written in python to brute force password.
+usage: ./yotp.py -u http://$IP/api/login
