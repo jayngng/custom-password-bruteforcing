@@ -1,1 +1,1 @@
-I have write this python code when I played CTFs
+I have wrote this python code when I played CTFs
