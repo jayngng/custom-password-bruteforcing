@@ -1,2 +1,6 @@
 Custom code written in python to brute force password.
-usage: ./yotp.py -u http://$IP/api/login
+usage: 
+
+```bash
+./yotp.py -u http://$IP/api/login
+```
